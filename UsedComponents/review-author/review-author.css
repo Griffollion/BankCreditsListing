@@ -1,0 +1,61 @@
+.review-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.review-author__avatar {
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.review-author__avatar img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.review-author__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.review-author__name {
+  font-size: inherit;
+  font-family: roboto-bold;
+  color: #0E1829;
+  margin-bottom: 2px;
+}
+
+.review-author__city {
+  font-size: inherit;
+  color: #999;
+}
+
+@media screen and (min-width: 768px) {
+  .review-author__right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .review-author__name {
+    margin-bottom: 0;
+  }
+  .review-author__city {
+    margin-left: 5px;
+  }
+}

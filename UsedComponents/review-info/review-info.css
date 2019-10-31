@@ -1,0 +1,230 @@
+@charset "UTF-8";
+.review-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.review-info__product {
+  min-height: 30px;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 12px;
+  padding: 5px 15px;
+  color: #000;
+  background-color: #F5F5F5;
+  border: 1px solid #EBEBEB;
+  border-radius: 2px;
+}
+
+.review-info__answer {
+  display: none;
+}
+
+.review-info__date {
+  font-size: 14px;
+  color: #999999;
+}
+
+.review-info__left {
+  width: 40%;
+}
+
+.review-info__center {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.review-info__right {
+  margin-top: 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.review-info__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.review-info__rating-text {
+  font-size: 14px;
+  color: #999;
+  margin-right: 10px;
+}
+
+.review-info__rating-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-right: 10px;
+  border-right: 1px solid #EBEBEB;
+  margin-right: 10px;
+}
+
+.review-info__rating-block:before {
+  font-family: Flaticon;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 5px;
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.review-info__rating-block:after {
+  -webkit-transition: color .25s ease;
+  -o-transition: color .25s ease;
+  transition: color .25s ease;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-right: 5px;
+  color: #14509C;
+  font-size: 14px;
+}
+
+.review-info__rating-block--up:before {
+  content: '\e907';
+  color: #63BC0A;
+}
+
+.review-info__rating-block--up:after {
+  content: 'да';
+}
+
+.review-info__rating-block--up:hover:before {
+  content: '\e913';
+}
+
+.review-info__rating-block--up.active:before {
+  content: '\e913';
+}
+
+.review-info__rating-block--down:before {
+  content: '\e911';
+  color: #E00707;
+}
+
+.review-info__rating-block--down:after {
+  content: 'нет';
+}
+
+.review-info__rating-block--down:hover:before {
+  content: '\e912';
+}
+
+.review-info__rating-block--down.active:before {
+  content: '\e912';
+}
+
+.review-info__rating-block span {
+  font-size: 14px;
+  color: #999999;
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.review-info__rating-block:last-child {
+  border-right: none;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.review-info__rating-block:hover:after {
+  color: #e86809;
+}
+
+@media screen and (min-width: 768px) {
+  .review-info {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .review-info__answer {
+    margin-left: 30px;
+  }
+  .review-info__answer.active {
+    display: block;
+  }
+  .review-info__answer a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .review-info__answer a span {
+    font-size: 13px;
+  }
+  .review-info__answer a:before {
+    font-family: Flaticon;
+    content: '\f106';
+    color: #63BC0A;
+    margin-right: 5px;
+    font-size: 16px;
+  }
+  .review-info__left {
+    width: auto;
+    margin-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .review-info__center {
+    width: auto;
+    margin-right: 30px;
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .review-info__right {
+    width: auto;
+    margin-top: 0;
+    line-height: 19px;
+  }
+}

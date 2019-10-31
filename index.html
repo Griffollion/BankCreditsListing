@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- FrontendAsset -->
+    <link rel="stylesheet" href="./FrontendAsset/bootstrap.css">
+    <link rel="stylesheet" href="./FrontendAsset/reset.css">
+    <link rel="stylesheet" href="./FrontendAsset/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="./FrontendAsset/bootstrap-slider.css">
+    <link rel="stylesheet" href="./FrontendAsset/cs-select.css">
+    <link rel="stylesheet" href="./FrontendAsset/style.css">
+    <link rel="stylesheet" href="./FrontendAsset/header-bank-menu.css">
+    <!-- FrontendAsset -->
+
+    <!--SlickAsset-->
+    <link rel="stylesheet" href="./SlickAsset/slick.css">
+    <link rel="stylesheet" href="./SlickAsset/slick-theme.css">
+    <!--SlickAssetEnd-->
+
+    <!-- Used Components -->
+    <link rel="stylesheet" href="./UsedComponents/dropdown-banks-search/dropdown-banks-search.css">
+    <link rel="stylesheet" href="./UsedComponents/review-block/review-block.css">
+    <link rel="stylesheet" href="./UsedComponents/star-rating/star-rating.css">
+    <link rel="stylesheet" href="./UsedComponents/review-author/review-author.css">
+    <link rel="stylesheet" href="./UsedComponents/review-info/review-info.css">
+    <!-- Used Components end-->
+
+    <!--Selectric Asset-->
+    <link rel="stylesheet" href="SelectricAsset/selectric.css">
+    <!--Selectric Asset end-->
+
+    <!-- Temp -->
+    <link rel="stylesheet" href="./Temp/FromProductpage/type.css">
+    <!-- Temp end-->
+
+    <!--New Styles-->
+    <link rel="stylesheet" href="new/css/bank-credits-list.css">
+    <link rel="stylesheet" href="new/css/revievs-in-page.css">
+    <link rel="stylesheet" href="new/css/components/popular-links/popular-links.css">
+    <!--New Styles end-->
+</head>
+
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <button class="header__logo-back-main_nav" data-main_nav-btnback=""
+                    title="На главную ru.myfin.by"></button>
+            <a class="header__logo" href="/"><img
+                    src="DefaultImages/logo-ru.myfin.svg" alt="ru.myfin.by"></a>
+            <div class="header__right desk-visible">
+                <div class="header__best header-table">
+                    <div class="header-table__top"><a class="header-table__title" href="/currency"
+                                                      title="Курсы валют в банках Вашего города">Лучшие курсы</a><span
+                            class="header-table__sub-title">покупка | продажа</span></div>
+                    <div class="header-table__body">
+                        <div class="header-table__cell"><a class="header-table__title" href="/currency/usd">USD</a>
+                            <div>
+                                63.9 | 63.87
+                            </div>
+                        </div>
+                        <div class="header-table__cell"><a class="header-table__title" href="/currency/eur">EUR</a>
+                            <div>
+                                71.31 | 71.1
+                            </div>
+                        </div>
+                        <div class="header-table__cell"><a class="header-table__title" href="/currency/uah">UAH</a>
+                            <div>
+                                15 | 27
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__best header-table">
+                    <div class="header-table__top"><a class="header-table__title" href="/currency/cb-rf"
+                                                      title="Курсы валют ЦБ РФ">ЦБ РФ</a><span
+                            class="header-table__sub-title">
+                                31.10.2019 </span></div>
+                    <div class="header-table__body">
+                        <div class="header-table__cell"><a class="header-table__title"
+                                                           href="/currency/cb-rf/usd">USD</a>
+                            <div>
+                                63.8734
+                            </div>
+                        </div>
+                        <div class="header-table__cell"><a class="header-table__title"
+                                                           href="/currency/cb-rf/eur">EUR</a>
+                            <div>
+                                71.0081
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__best header-city">
+                    <div class="header-city__title">
+                        Ваш город:
+                    </div>
+                    <div class="header-city__city" data-toggle="modal" data-target="#modal-city">
+                        Россия
+                    </div>
+                </div>
+            </div>
+            <button class="hamburger hidden-lg hidden-md"
+                    data-main_nav-btn=""><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</header>
+<!-- Header -->
+
+<!-- Main Nav -->
+<div class="main_nav">
+    <div class="container">
+        <div class="main_nav__inner">
+            <div class="main_nav___logo"><a href="/"><img title="MyFin" src="DefaultImages/logo-ru.myfin.svg"
+                                                          alt="MyFin"></a></div>
+            <ul class="main_nav__list">
+                <li class="main_nav__item main_nav__item-sub "><a class="main_nav__link" href="/currency">Курсы
+                    валют</a>
+                    <div class="main_nav__sub">
+                        <div class="main_nav__sub-inner container">
+                            <div class="main_nav__sub-cell main_nav__sub-cell--25"><a class="main_nav__sub-title"
+                                                                                      href="/currency">Курсы валют</a>
+                                <ul class="main_nav__sub-list">
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/usd">Курс доллара</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/eur">Курс евро</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/gbp">Курс фунта</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/byn">Курс бел. рубля</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/kzt">Курс тенге</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/cny">Курс юаня</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/pln">Курс злотого</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/uah">Курс гривны</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/chf">Курс франка</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/jpy">Курс йены</a></li>
+                                </ul>
+                            </div>
+                            <div class="main_nav__sub-cell main_nav__sub-cell--25">
+                                <div class="main_nav__sub-title">В городах</div>
+                                <ul class="main_nav__sub-list">
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/moskva">Москва</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/sankt-peterburg">Санкт-Петербург</a>
+                                    </li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/ekaterinburg">Екатеринбург</a>
+                                    </li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/kazan">Казань</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/nizhniy-novgorod">Нижний
+                                        Новгород</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/novosibirsk">Новосибирск</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/omsk">Омск</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/samara">Самара</a></li>
+                                </ul>
+                            </div>
+                            <div class="main_nav__sub-cell main_nav__sub-cell--25"><a class="main_nav__sub-title"
+                                                                                      href="/currency/cb-rf">Курсы валют
+                                ЦБ РФ</a>
+                                <ul class="main_nav__sub-list">
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/cb-rf/usd">Курс доллара ЦБ</a>
+                                    </li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/currency/cb-rf/eur">Курс евро ЦБ</a></li>
+                                </ul>
+                            </div>
+                            <div class="main_nav__sub-cell main_nav__sub-cell--25"><a class="main_nav__sub-title"
+                                                                                      href="/converter">Конвертер
+                                валют</a></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_nav__item main_nav__item-sub "><a class="main_nav__link" href="/kredity">Кредиты</a>
+                    <div class="main_nav__sub">
+                        <div class="main_nav__sub-inner container">
+                            <div class="main_nav__sub-cell main_nav__sub-cell--25"><a class="main_nav__sub-title"
+                                                                                      href="/kredity">Потребительские</a>
+                                <ul class="main_nav__sub-list">
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/nalichnymi">Наличными</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/refinansirovanie">Рефинансирование</a>
+                                    </li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/online-zayavka">Онлайн-заявка</a>
+                                    </li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/na-kartu">На карту</a></li>
+                                </ul>
+                            </div>
+                            <div class="main_nav__sub-cell main_nav__sub-cell--25">
+                                <ul class="main_nav__sub-list main_nav_sub-list-no-title">
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/kalkulator">Калькулятор</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/pod-zalog-nedvizhimosti">Под залог
+                                        недвижимости</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/bez-spravok">Без справок</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/pensioneram">Пенсионерам</a></li>
+                                </ul>
+                            </div>
+                            <div class="main_nav__sub-cell main_nav__sub-cell--50"><a class="main_nav__sub-title"
+                                                                                      href="/kredity/regions">В
+                                городах</a>
+                                <ul class="main_nav__sub-list main_nav__sub-list--column-2">
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/moskva">Москва</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/sankt-peterburg">Санкт-Петербург</a>
+                                    </li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/ekaterinburg">Екатеринбург</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/kazan">Казань</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/nizhniy-novgorod">Нижний
+                                        Новгород</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/novosibirsk">Новосибирск</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/omsk">Омск</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/kredity/samara">Самара</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_nav__item main_nav__item-sub "><a class="main_nav__link" href="/ipoteka">Ипотека</a>
+                    <div class="main_nav__sub">
+                        <div class="main_nav__sub-inner container">
+                            <div class="main_nav__sub-cell main_nav__sub-cell--50"><a class="main_nav__sub-title"
+                                                                                      href="/ipoteka">Ипотека</a>
+                                <ul class="main_nav__sub-list main_nav__sub-list--column-2">
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/kalkulyator">Калькулятор</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/refinansirovanie">Рефинансирование</a>
+                                    </li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/bez-pervonachalnogo-vznosa">Без
+                                        первоначального
+                                        взноса</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/na-kvartiru">Кредит на квартиру</a>
+                                    </li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/voennym">Военная</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/molodaya-semya">Для молодой
+                                        семьи</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/socialnaya">Социальная</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/na-stroitelstvo-doma">На
+                                        строительство дома</a></li>
+                                </ul>
+                            </div>
+                            <div class="main_nav__sub-cell main_nav__sub-cell--50">
+                                <div class="main_nav__sub-title">В городах</div>
+                                <ul class="main_nav__sub-list main_nav__sub-list--column-2">
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/moskva">Москва</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/sankt-peterburg">Санкт-Петербург</a>
+                                    </li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/ekaterinburg">Екатеринбург</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/kazan">Казань</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/nizhniy-novgorod">Нижний
+                                        Новгород</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/novosibirsk">Новосибирск</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/omsk">Омск</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/ipoteka/samara">Самара</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_nav__item "><a class="main_nav__link" href="/avtokredity">Автокредиты</a></li>
+                <li class="main_nav__item "><a class="main_nav__link" href="/credit-cards">Кредитные карты</a></li>
+                <li class="main_nav__item main_nav__item-sub "><a class="main_nav__link" href="/zaymy">Займы</a>
+                    <div class="main_nav__sub">
+                        <div class="main_nav__sub-inner container">
+                            <div class="main_nav__sub-cell main_nav__sub-cell--40"><a class="main_nav__sub-title"
+                                                                                      href="/zaymy">Займы</a>
+                                <ul class="main_nav__sub-list main_nav__sub-list--column-2">
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/na-kartu">На карту</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/bez-otkaza">Без отказа</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/bez-procentov">Без процентов</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/bez-poruchiteley">Без поручителей</a>
+                                    </li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/online">Онлайн</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/nalichnymi">Наличными</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/pensioneram">Пенсионерам</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/mgnovennyi">Мгновенный</a></li>
+                                </ul>
+                            </div>
+                            <div class="main_nav__sub-cell main_nav__sub-cell--40">
+                                <div class="main_nav__sub-title">В городах</div>
+                                <ul class="main_nav__sub-list main_nav__sub-list--column-2">
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/moskva">Москва</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/sankt-peterburg">Санкт-Петербург</a>
+                                    </li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/ekaterinburg">Екатеринбург</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/kazan">Казань</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/nizhniy-novgorod">Нижний Новгород</a>
+                                    </li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/novosibirsk">Новосибирск</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/omsk">Омск</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/zaymy/samara">Самара</a></li>
+                                </ul>
+                            </div>
+                            <div class="main_nav__sub-cell main_nav__sub-cell--20"><a class="main_nav__sub-title"
+                                                                                      href="/mfo">Список МФО</a>
+                                <ul class="main_nav__sub-list">
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/mfo/lime-zaim">Лайм-займ</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/mfo/zaymer">Займер</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/mfo/turbozaim">Турбозайм</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_nav__item main_nav__item-sub active"><a class="main_nav__link"
+                                                                        href="/banki">Банки</a>
+                    <div class="main_nav__sub">
+                        <div class="main_nav__sub-inner container">
+                            <div class="main_nav__sub-cell main_nav__sub-cell--50"><a class="main_nav__sub-title"
+                                                                                      href="/banki">Банки</a>
+                                <ul class="main_nav__sub-list main_nav__sub-list--column-2">
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/bank/sberbank"><img
+                                            class="bank_icon bank_icon16"
+                                            src="https://api.mainfin.ru/bank_logo/icons/sberbank.png"
+                                            alt="Сбербанк">Сбербанк</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/bank/vtb"><img
+                                            class="bank_icon bank_icon16"
+                                            src="https://api.mainfin.ru/bank_logo/icons/vtb.png"
+                                            alt="Банк ВТБ">Банк ВТБ</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/bank/gazprombank"><img
+                                            class="bank_icon bank_icon16"
+                                            src="https://api.mainfin.ru/bank_logo/icons/gazprombank.png"
+                                            alt="Газпромбанк">Газпромбанк</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/bank/alfabank"><img
+                                            class="bank_icon bank_icon16"
+                                            src="https://api.mainfin.ru/bank_logo/icons/alfabank.png"
+                                            alt="Альфа-Банк">Альфа-Банк</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/bank/rshb"><img
+                                            class="bank_icon bank_icon16"
+                                            src="https://api.mainfin.ru/bank_logo/icons/rshb.png"
+                                            alt="Россельхозбанк">Россельхозбанк</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/bank/otkritie"><img
+                                            class="bank_icon bank_icon16"
+                                            src="https://api.mainfin.ru/bank_logo/icons/otkritie.png"
+                                            alt="Банк «Открытие»">Банк «Открытие»</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/bank/mkb"><img
+                                            class="bank_icon bank_icon16"
+                                            src="https://api.mainfin.ru/bank_logo/icons/mkb.png"
+                                            alt="Московский Кредитный Банк">Московский Кредитный Банк</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/bank/promsvyazbank"><img
+                                            class="bank_icon bank_icon16"
+                                            src="https://api.mainfin.ru/bank_logo/icons/promsvyazbank.png"
+                                            alt="Промсвязьбанк">Промсвязьбанк</a></li>
+                                </ul>
+                            </div>
+                            <div class="main_nav__sub-cell main_nav__sub-cell--25">
+                                <ul class="main_nav__sub-list main_nav_sub-list-no-title">
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/departments/moskva">Отделения на карте</a>
+                                    </li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/atm/moskva">Банкоматы на карте</a></li>
+                                </ul>
+                            </div>
+                            <div class="main_nav__sub-cell main_nav__sub-cell--25">
+                                <ul class="main_nav__sub-list main_nav_sub-list-no-title">
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/departments-list/moskva">Отделения
+                                        списком</a></li>
+                                    <li class="main_nav__sub-item"><a class="main_nav__sub-link"
+                                                                      href="/atm-list/moskva">Банкоматы списком</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="main_nav__city-more"><a class="main_nav__city-link main_nav__city-item--more"
+                                                data-toggle="modal" data-target="#modal-city">
+                Россия </a></div>
+            <div class="main_nav__right">
+                <form class="main_nav__form" action="/site/search">
+                    <div class="main_nav__search-wrapp"><input class="main_nav__search" placeholder="Поиск..."
+                                                               type="text" value="" name="q" id="search"></div>
+                </form>
+                <button class="main_nav__btn-search" type="button"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main Nav end-->
+
+<div class="updated-controls">
+    <!-- Top Content -->
+    <div class="top-content menu-hole-margin">
+        <div class="top-content__section mob-hidden">
+            <div class="container">
+                <ul class="breadcrumb ">
+                    <li><a href="http://testru.myfin.by"><span>Главная</span></a></li>
+                    <li><a href="/banki"><span>Банки </span></a></li>
+                    <li><a href="/bank/tcs"><span>Тинькофф Банк</span></a></li>
+                    <li><a href="/bank/tcs/kredity"><span>Потребительские кредиты Тинькофф Банка</span></a></li>
+                    <li class="active"><span>Наличными без залога</span><a
+                            href="http://testru.myfin.by/bank/tcs/kredity/nalicnymi-3"></a></li>
+                </ul>
+                <script
+                        type="application/ld+json">
+                    {"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"/banki","name":"Банки "}},{"@type":"ListItem","position":2,"item":{"@id":"/bank/tcs","name":"Тинькофф Банк"}},{"@type":"ListItem","position":3,"item":{"@id":"/bank/tcs/kredity","name":"Потребительские кредиты Тинькофф Банка"}},{"@type":"ListItem","position":4,"item":{"@id":"http://testru.myfin.by/bank/tcs/kredity/nalicnymi-3","name":"Наличными без залога"}}]}
+
+
+
+
+
+
+
+
+                </script>
+            </div>
+        </div>
+        <div class="top-content__section">
+            <div class="container">
+                <div class="header-bank-top">
+                    <div class="header-bank-top__right">
+                        <div class="all_bank_menu">
+                            <div class="dropdown-banks-search-container"><span class="js-btn btn btn--underline"
+                                                                               data-toggle="dropdown-banks-search">Изменить банк <i
+                                    class="ic-arrow_down"></i></span>
+                                <div class="dropdown-banks-search">
+                                    <div class="dropdown-banks-search__autocompleter">
+                                        <form class="form-search"><input type="text"
+                                                                         class="autoCompleteInput autoCompleteDropDown search-input"
+                                                                         name="attribute"
+                                                                         placeholder="Введите название банка"
+                                                                         data-class="Bank" data-attribute="name"
+                                                                         data-params="{&quot;link&quot;:&quot;\/bank\/tcs\/kredity\/nalicnymi-3&quot;,&quot;show_img&quot;:true,&quot;referrer&quot;:&quot;\/bank\/tcs\/kredity&quot;,&quot;find_mode&quot;:&quot;&quot;,&quot;no_complete&quot;:&quot;true&quot;}"
+                                                                         autocomplete="new-password" data-counter="-1"
+                                                                         data-timeout="300">
+                                            <ul class="autoCompleteList bankAutocomplete"></ul>
+                                        </form>
+                                    </div>
+                                    <div class="dropdown-banks-search__static-results">
+                                        <ul>
+                                            <li><a href="http://testru.myfin.by/bank/sberbank/kredity"><img
+                                                    class="bank_icon bank_icon16"
+                                                    src="https://api.mainfin.ru/bank_logo/icons/sberbank.png"
+                                                    alt="Сбербанк"> Сбербанк </a></li>
+                                            <li><a href="http://testru.myfin.by/bank/vtb/kredity"><img
+                                                    class="bank_icon bank_icon16"
+                                                    src="https://api.mainfin.ru/bank_logo/icons/vtb24.png"
+                                                    alt="Банк ВТБ"> Банк ВТБ </a></li>
+                                            <li><a href="http://testru.myfin.by/bank/gazprombank/kredity"><img
+                                                    class="bank_icon bank_icon16"
+                                                    src="https://api.mainfin.ru/bank_logo/icons/gazprombank.png"
+                                                    alt="Газпромбанк"> Газпромбанк </a></li>
+                                            <li><a href="http://testru.myfin.by/bank/rshb/kredity"><img
+                                                    class="bank_icon bank_icon16"
+                                                    src="https://api.mainfin.ru/bank_logo/icons/rshb.png"
+                                                    alt="Россельхозбанк"> Россельхозбанк </a></li>
+                                            <li><a href="http://testru.myfin.by/bank/alfabank/kredity"><img
+                                                    class="bank_icon bank_icon16"
+                                                    src="https://api.mainfin.ru/bank_logo/icons/alfabank.png"
+                                                    alt="Альфа-Банк"> Альфа-Банк </a></li>
+                                            <li><a href="http://testru.myfin.by/bank/otkritie/kredity"><img
+                                                    class="bank_icon bank_icon16"
+                                                    src="https://api.mainfin.ru/bank_logo/icons/otkritie.png"
+                                                    alt="Банк Открытие"> Банк Открытие </a></li>
+                                            <li><a href="http://testru.myfin.by/bank/mkb/kredity"><img
+                                                    class="bank_icon bank_icon16"
+                                                    src="https://api.mainfin.ru/bank_logo/icons/mkb.png"
+                                                    alt="Московский Кредитный Банк"> Московский Кредитный Банк
+                                            </a>
+                                            </li>
+                                            <li><a href="http://testru.myfin.by/bank/promsvyazbank/kredity"><img
+                                                    class="bank_icon bank_icon16"
+                                                    src="https://api.mainfin.ru/bank_logo/icons/promsvyazbank.png"
+                                                    alt="Промсвязьбанк"> Промсвязьбанк </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-bank-top__img"><a href="/bank/tcs"><img
+                                src="https://api.mainfin.ru/bank_logo/logos/tcs.png" alt="Тинькофф Банк"></a>
+                        </div>
+                    </div>
+                    <div class="header-bank-top__title header-bank-top__title--inline">
+                        <h1>Потребительские кредиты Тинькофф Банка</h1><span class="text-gray fs-12 ml-20">Лицензия
+                                № 2673</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-content__section">
+            <div class="container">
+                <div>
+                    <ul class="header-bank-menu list-reset header-bank-menu—ordered">
+                        <li class="header-bank-menu__item"><a href="/bank/tcs" class="header-bank-menu__link">О
+                            банке</a></li>
+                        <li class="header-bank-menu__item header-bank-menu__item--sub"><a href="/bank/tcs/kredity"
+                                                                                          class="header-bank-menu__link">Все
+                            кредиты</a>
+                            <ul class="header-bank-menu__sub-menu list-reset">
+                                <li class=""><a href="/bank/tcs/kredity/ipoteka"
+                                                class="header-bank-menu__link">Ипотека</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-bank-menu__item"><a href="/bank/tcs/kredity/cards"
+                                                              class="header-bank-menu__link">Кредитные карты</a></li>
+                        <li class="header-bank-menu__item"><a href="/bank/tcs/currency"
+                                                              class="header-bank-menu__link">Курсы валют</a></li>
+                        <li class="header-bank-menu__item header-bank-menu__item--sub"><a
+                                href="/bank/tcs/departments-list/moskva"
+                                class="header-bank-menu__link">Отделения</a>
+                            <ul class="header-bank-menu__sub-menu list-reset">
+                                <li class=""><a href="/bank/tcs/departments/moskva"
+                                                class="header-bank-menu__link">Отделения на карте</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-bank-menu__item header-bank-menu__item--sub"><a
+                                href="/bank/tcs/atm-list/moskva" class="header-bank-menu__link">Банкоматы</a>
+                            <ul class="header-bank-menu__sub-menu list-reset">
+                                <li class=""><a href="/bank/tcs/atm/moskva" class="header-bank-menu__link">Банкоматы
+                                    на
+                                    карте</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Content End-->
+
+    <div class="container">
+
+        <!--Популярные ссылки-->
+        <div class="content_i mt-20">
+            <div class="container">
+                <div class="popular-links popular-links--in-container">
+                    <ul class="popular-links__list">
+                        <li class="popular-links__item active"><a class="popular-links__link"
+                                                           href="#">Потребительские</a>
+                        </li>
+                        <li class="popular-links__item "><a class="popular-links__link"
+                                                           href="#">Ипотека</a>
+                        </li>
+                        <li class="popular-links__item"><a class="popular-links__link"
+                                                           href="#">На карту</a>
+                        </li>
+                        <li class="popular-links__item"><a class="popular-links__link"
+                                                           href="#">Онлайн-заявку </a>
+                        </li>
+                        <li class="popular-links__item"><a class="popular-links__link"
+                                                           href="#">Рефинансирование</a>
+                        </li>
+                        <li class="popular-links__item"><a class="popular-links__link"
+                                                           href="#">Наличными</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Популярные ссылки end-->
+
+        <!--Сортировка на мобилке-->
+        <div class="select-container tablet-vis mb-10">
+            <select name="" id="">
+                <option value="">Не выбрано</option>
+                <option value="">Вид 1</option>
+                <option value="">Вид 2</option>
+            </select>
+        </div>
+        <!--Сортировка на мобилке end-->
+
+        <!-- Листинг кредитов -->
+        <div class="content_i credits-list-content mb-20">
+            <ul class="sorter-links sorter-links--credits">
+                <li>Банк</li>
+                <li>Название</li>
+                <li><span>Ставка</span></li>
+                <li><span>Сумма</span></li>
+                <li><span>Срок</span></li>
+                <li>Заявка</li>
+            </ul>
+            <div id="credit_list" class="loans-list">
+                <!--Список кредитов-->
+                <div class="bb-1">
+                    <div class="credits-list__item-container">
+                        <div class="credits-list__item">
+                        <div class="credits-list-item credits-list-item--requirements">
+                            <div class="credits-list-item__cell credits-list-item__logo">
+                                <div class="credits-list-item__logo-wrapper">
+                                    <a href="#" target="_blank">
+                                        <img src="https://api.mainfin.ru/bank_logo/logos/mkb.png"
+                                             alt="Московский Кредитный Банк">
+                                    </a>
+                                    <a href="#" target="_blank">
+                                            <span class="credits-list-item__name desk-hidden">Кредит На любые
+                                                        цели</span>
+                                    </a>
+                                </div>
+                                <div class="credits-list-item__license">Лиц. № 1978</div>
+                            </div>
+                            <div class="credits-list-item__data">
+                                <div class="credits-list-item__cell credits-list-item__name mob-hidden"><a
+                                        href="#"
+                                        target="_blank" data-pjax="0">Кредит На любые цели</a>
+                                </div>
+                                <div
+                                        class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__sum-cont">
+                                    <div class="credits-list-item__title">Ставка</div>
+                                    <div class="credits-list-item__sum"> 10.9%</div>
+                                </div>
+                                <div
+                                        class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__rate-cont">
+                                    <div class="credits-list-item__title">Сумма</div>
+                                    <div class="credits-list-item__rate">от 14 900 ₽</div>
+                                </div>
+                                <div
+                                        class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__period">
+                                    <div class="credits-list-item__title">Срок</div>
+                                    3 - 60 мес.
+                                </div>
+                            </div>
+                            <div class="credit-requirements credit-requirements--bt">
+                                <button
+                                        class="credit-requirements__close"></button>
+                                <div class="credit-requirements__content">
+                                    <div class="credit-requirements__wrapper">
+                                        <div class="credit-requirements__cell">
+                                            <div class="credit-requirements__header">Требования</div>
+                                            <ul class="credit-requirements__list">
+                                                <li> Мужчины от 18 до 65 лет<br> Женщины от 18 до 65 лет<br>
+                                                </li>
+                                                <li>Стаж на последнем месте работы от 3 месяцев</li>
+                                            </ul>
+                                        </div>
+                                        <div class="credit-requirements__cell">
+                                            <div class="credit-requirements__header">Выдача и погашение
+                                            </div>
+                                            <ul class="credit-requirements__list">
+                                                <li>Решение в течение 3 дней</li>
+                                                <li> Аннуитетные платежи</li>
+                                            </ul>
+                                        </div>
+                                        <div class="credit-requirements__cell">
+                                            <div class="credit-requirements__header">Документы</div>
+                                            <ul class="credit-requirements__list">
+                                                <li>Заявление</li>
+                                                <li>Паспорт</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="credit-requirements__link">
+                                    <a href="#" target="_blank">Подробнее о кредите</a>
+                                </div>
+                            </div>
+                            <div class="credits-list-item__cell credits-list-item__btn">
+                                <div class="credits-list-item__license">Лиц. № 1978</div>
+                                <div class="credits-list-item__requirements-btn"> Требования</div>
+                                <span class="btn btn-success button_list">Подать заявку</span>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="credits-list__item">
+                            <div class="credits-list-item credits-list-item--requirements">
+                                <div class="credits-list-item__cell credits-list-item__logo">
+                                    <div class="credits-list-item__logo-wrapper">
+                                        <a href="#" target="_blank">
+                                            <img src="https://api.mainfin.ru/bank_logo/logos/mkb.png"
+                                                 alt="Московский Кредитный Банк">
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <span class="credits-list-item__name desk-hidden">Кредит На любые
+                                                        цели</span>
+                                        </a>
+                                    </div>
+                                    <div class="credits-list-item__license">Лиц. № 1978</div>
+                                </div>
+                                <div class="credits-list-item__data">
+                                    <div class="credits-list-item__cell credits-list-item__name mob-hidden"><a
+                                            href="#"
+                                            target="_blank" data-pjax="0">Кредит На любые цели</a>
+                                    </div>
+                                    <div
+                                            class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__sum-cont">
+                                        <div class="credits-list-item__title">Ставка</div>
+                                        <div class="credits-list-item__sum"> 10.9%</div>
+                                    </div>
+                                    <div
+                                            class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__rate-cont">
+                                        <div class="credits-list-item__title">Сумма</div>
+                                        <div class="credits-list-item__rate">от 14 900 ₽</div>
+                                    </div>
+                                    <div
+                                            class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__period">
+                                        <div class="credits-list-item__title">Срок</div>
+                                        3 - 60 мес.
+                                    </div>
+                                </div>
+                                <div class="credit-requirements credit-requirements--bt">
+                                    <button
+                                            class="credit-requirements__close"></button>
+                                    <div class="credit-requirements__content">
+                                        <div class="credit-requirements__wrapper">
+                                            <div class="credit-requirements__cell">
+                                                <div class="credit-requirements__header">Требования</div>
+                                                <ul class="credit-requirements__list">
+                                                    <li> Мужчины от 18 до 65 лет<br> Женщины от 18 до 65 лет<br>
+                                                    </li>
+                                                    <li>Стаж на последнем месте работы от 3 месяцев</li>
+                                                </ul>
+                                            </div>
+                                            <div class="credit-requirements__cell">
+                                                <div class="credit-requirements__header">Выдача и погашение
+                                                </div>
+                                                <ul class="credit-requirements__list">
+                                                    <li>Решение в течение 3 дней</li>
+                                                    <li> Аннуитетные платежи</li>
+                                                </ul>
+                                            </div>
+                                            <div class="credit-requirements__cell">
+                                                <div class="credit-requirements__header">Документы</div>
+                                                <ul class="credit-requirements__list">
+                                                    <li>Заявление</li>
+                                                    <li>Паспорт</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="credit-requirements__link">
+                                        <a href="#" target="_blank">Подробнее о кредите</a>
+                                    </div>
+                                </div>
+                                <div class="credits-list-item__cell credits-list-item__btn">
+                                    <div class="credits-list-item__license">Лиц. № 1978</div>
+                                    <div class="credits-list-item__requirements-btn"> Требования</div>
+                                    <span class="btn btn-success button_list">Подать заявку</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="credits-list__item">
+                            <div class="credits-list-item credits-list-item--requirements">
+                                <div class="credits-list-item__cell credits-list-item__logo">
+                                    <div class="credits-list-item__logo-wrapper">
+                                        <a href="#" target="_blank">
+                                            <img src="https://api.mainfin.ru/bank_logo/logos/mkb.png"
+                                                 alt="Московский Кредитный Банк">
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <span class="credits-list-item__name desk-hidden">Кредит На любые
+                                                        цели</span>
+                                        </a>
+                                    </div>
+                                    <div class="credits-list-item__license">Лиц. № 1978</div>
+                                </div>
+                                <div class="credits-list-item__data">
+                                    <div class="credits-list-item__cell credits-list-item__name mob-hidden"><a
+                                            href="#"
+                                            target="_blank" data-pjax="0">Кредит На любые цели</a>
+                                    </div>
+                                    <div
+                                            class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__sum-cont">
+                                        <div class="credits-list-item__title">Ставка</div>
+                                        <div class="credits-list-item__sum"> 10.9%</div>
+                                    </div>
+                                    <div
+                                            class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__rate-cont">
+                                        <div class="credits-list-item__title">Сумма</div>
+                                        <div class="credits-list-item__rate">от 14 900 ₽</div>
+                                    </div>
+                                    <div
+                                            class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__period">
+                                        <div class="credits-list-item__title">Срок</div>
+                                        3 - 60 мес.
+                                    </div>
+                                </div>
+                                <div class="credit-requirements credit-requirements--bt">
+                                    <button
+                                            class="credit-requirements__close"></button>
+                                    <div class="credit-requirements__content">
+                                        <div class="credit-requirements__wrapper">
+                                            <div class="credit-requirements__cell">
+                                                <div class="credit-requirements__header">Требования</div>
+                                                <ul class="credit-requirements__list">
+                                                    <li> Мужчины от 18 до 65 лет<br> Женщины от 18 до 65 лет<br>
+                                                    </li>
+                                                    <li>Стаж на последнем месте работы от 3 месяцев</li>
+                                                </ul>
+                                            </div>
+                                            <div class="credit-requirements__cell">
+                                                <div class="credit-requirements__header">Выдача и погашение
+                                                </div>
+                                                <ul class="credit-requirements__list">
+                                                    <li>Решение в течение 3 дней</li>
+                                                    <li> Аннуитетные платежи</li>
+                                                </ul>
+                                            </div>
+                                            <div class="credit-requirements__cell">
+                                                <div class="credit-requirements__header">Документы</div>
+                                                <ul class="credit-requirements__list">
+                                                    <li>Заявление</li>
+                                                    <li>Паспорт</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="credit-requirements__link">
+                                        <a href="#" target="_blank">Подробнее о кредите</a>
+                                    </div>
+                                </div>
+                                <div class="credits-list-item__cell credits-list-item__btn">
+                                    <div class="credits-list-item__license">Лиц. № 1978</div>
+                                    <div class="credits-list-item__requirements-btn"> Требования</div>
+                                    <span class="btn btn-success button_list">Подать заявку</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="credits-list__item">
+                            <div class="credits-list-item credits-list-item--requirements">
+                                <div class="credits-list-item__cell credits-list-item__logo">
+                                    <div class="credits-list-item__logo-wrapper">
+                                        <a href="#" target="_blank">
+                                            <img src="https://api.mainfin.ru/bank_logo/logos/mkb.png"
+                                                 alt="Московский Кредитный Банк">
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <span class="credits-list-item__name desk-hidden">Кредит На любые
+                                                        цели</span>
+                                        </a>
+                                    </div>
+                                    <div class="credits-list-item__license">Лиц. № 1978</div>
+                                </div>
+                                <div class="credits-list-item__data">
+                                    <div class="credits-list-item__cell credits-list-item__name mob-hidden"><a
+                                            href="#"
+                                            target="_blank" data-pjax="0">Кредит На любые цели</a>
+                                    </div>
+                                    <div
+                                            class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__sum-cont">
+                                        <div class="credits-list-item__title">Ставка</div>
+                                        <div class="credits-list-item__sum"> 10.9%</div>
+                                    </div>
+                                    <div
+                                            class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__rate-cont">
+                                        <div class="credits-list-item__title">Сумма</div>
+                                        <div class="credits-list-item__rate">от 14 900 ₽</div>
+                                    </div>
+                                    <div
+                                            class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__period">
+                                        <div class="credits-list-item__title">Срок</div>
+                                        3 - 60 мес.
+                                    </div>
+                                </div>
+                                <div class="credit-requirements credit-requirements--bt">
+                                    <button
+                                            class="credit-requirements__close"></button>
+                                    <div class="credit-requirements__content">
+                                        <div class="credit-requirements__wrapper">
+                                            <div class="credit-requirements__cell">
+                                                <div class="credit-requirements__header">Требования</div>
+                                                <ul class="credit-requirements__list">
+                                                    <li> Мужчины от 18 до 65 лет<br> Женщины от 18 до 65 лет<br>
+                                                    </li>
+                                                    <li>Стаж на последнем месте работы от 3 месяцев</li>
+                                                </ul>
+                                            </div>
+                                            <div class="credit-requirements__cell">
+                                                <div class="credit-requirements__header">Выдача и погашение
+                                                </div>
+                                                <ul class="credit-requirements__list">
+                                                    <li>Решение в течение 3 дней</li>
+                                                    <li> Аннуитетные платежи</li>
+                                                </ul>
+                                            </div>
+                                            <div class="credit-requirements__cell">
+                                                <div class="credit-requirements__header">Документы</div>
+                                                <ul class="credit-requirements__list">
+                                                    <li>Заявление</li>
+                                                    <li>Паспорт</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="credit-requirements__link">
+                                        <a href="#" target="_blank">Подробнее о кредите</a>
+                                    </div>
+                                </div>
+                                <div class="credits-list-item__cell credits-list-item__btn">
+                                    <div class="credits-list-item__license">Лиц. № 1978</div>
+                                    <div class="credits-list-item__requirements-btn"> Требования</div>
+                                    <span class="btn btn-success button_list">Подать заявку</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="credits-list__item">
+                            <div class="credits-list-item credits-list-item--requirements">
+                                <div class="credits-list-item__cell credits-list-item__logo">
+                                    <div class="credits-list-item__logo-wrapper">
+                                        <a href="#" target="_blank">
+                                            <img src="https://api.mainfin.ru/bank_logo/logos/mkb.png"
+                                                 alt="Московский Кредитный Банк">
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <span class="credits-list-item__name desk-hidden">Кредит На любые
+                                                        цели</span>
+                                        </a>
+                                    </div>
+                                    <div class="credits-list-item__license">Лиц. № 1978</div>
+                                </div>
+                                <div class="credits-list-item__data">
+                                    <div class="credits-list-item__cell credits-list-item__name mob-hidden"><a
+                                            href="#"
+                                            target="_blank" data-pjax="0">Кредит На любые цели</a>
+                                    </div>
+                                    <div
+                                            class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__sum-cont">
+                                        <div class="credits-list-item__title">Ставка</div>
+                                        <div class="credits-list-item__sum"> 10.9%</div>
+                                    </div>
+                                    <div
+                                            class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__rate-cont">
+                                        <div class="credits-list-item__title">Сумма</div>
+                                        <div class="credits-list-item__rate">от 14 900 ₽</div>
+                                    </div>
+                                    <div
+                                            class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__period">
+                                        <div class="credits-list-item__title">Срок</div>
+                                        3 - 60 мес.
+                                    </div>
+                                </div>
+                                <div class="credit-requirements credit-requirements--bt">
+                                    <button
+                                            class="credit-requirements__close"></button>
+                                    <div class="credit-requirements__content">
+                                        <div class="credit-requirements__wrapper">
+                                            <div class="credit-requirements__cell">
+                                                <div class="credit-requirements__header">Требования</div>
+                                                <ul class="credit-requirements__list">
+                                                    <li> Мужчины от 18 до 65 лет<br> Женщины от 18 до 65 лет<br>
+                                                    </li>
+                                                    <li>Стаж на последнем месте работы от 3 месяцев</li>
+                                                </ul>
+                                            </div>
+                                            <div class="credit-requirements__cell">
+                                                <div class="credit-requirements__header">Выдача и погашение
+                                                </div>
+                                                <ul class="credit-requirements__list">
+                                                    <li>Решение в течение 3 дней</li>
+                                                    <li> Аннуитетные платежи</li>
+                                                </ul>
+                                            </div>
+                                            <div class="credit-requirements__cell">
+                                                <div class="credit-requirements__header">Документы</div>
+                                                <ul class="credit-requirements__list">
+                                                    <li>Заявление</li>
+                                                    <li>Паспорт</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="credit-requirements__link">
+                                        <a href="#" target="_blank">Подробнее о кредите</a>
+                                    </div>
+                                </div>
+                                <div class="credits-list-item__cell credits-list-item__btn">
+                                    <div class="credits-list-item__license">Лиц. № 1978</div>
+                                    <div class="credits-list-item__requirements-btn"> Требования</div>
+                                    <span class="btn btn-success button_list">Подать заявку</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="credits-list__item">
+                            <div class="credits-list-item credits-list-item--requirements">
+                                <div class="credits-list-item__cell credits-list-item__logo">
+                                    <div class="credits-list-item__logo-wrapper">
+                                        <a href="#" target="_blank">
+                                            <img src="https://api.mainfin.ru/bank_logo/logos/mkb.png"
+                                                 alt="Московский Кредитный Банк">
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <span class="credits-list-item__name desk-hidden">Кредит На любые
+                                                        цели</span>
+                                        </a>
+                                    </div>
+                                    <div class="credits-list-item__license">Лиц. № 1978</div>
+                                </div>
+                                <div class="credits-list-item__data">
+                                    <div class="credits-list-item__cell credits-list-item__name mob-hidden"><a
+                                            href="#"
+                                            target="_blank" data-pjax="0">Кредит На любые цели</a>
+                                    </div>
+                                    <div
+                                            class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__sum-cont">
+                                        <div class="credits-list-item__title">Ставка</div>
+                                        <div class="credits-list-item__sum"> 10.9%</div>
+                                    </div>
+                                    <div
+                                            class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__rate-cont">
+                                        <div class="credits-list-item__title">Сумма</div>
+                                        <div class="credits-list-item__rate">от 14 900 ₽</div>
+                                    </div>
+                                    <div
+                                            class="credits-list-item__cell credits-list-item__cell--with-title credits-list-item__period">
+                                        <div class="credits-list-item__title">Срок</div>
+                                        3 - 60 мес.
+                                    </div>
+                                </div>
+                                <div class="credit-requirements credit-requirements--bt">
+                                    <button
+                                            class="credit-requirements__close"></button>
+                                    <div class="credit-requirements__content">
+                                        <div class="credit-requirements__wrapper">
+                                            <div class="credit-requirements__cell">
+                                                <div class="credit-requirements__header">Требования</div>
+                                                <ul class="credit-requirements__list">
+                                                    <li> Мужчины от 18 до 65 лет<br> Женщины от 18 до 65 лет<br>
+                                                    </li>
+                                                    <li>Стаж на последнем месте работы от 3 месяцев</li>
+                                                </ul>
+                                            </div>
+                                            <div class="credit-requirements__cell">
+                                                <div class="credit-requirements__header">Выдача и погашение
+                                                </div>
+                                                <ul class="credit-requirements__list">
+                                                    <li>Решение в течение 3 дней</li>
+                                                    <li> Аннуитетные платежи</li>
+                                                </ul>
+                                            </div>
+                                            <div class="credit-requirements__cell">
+                                                <div class="credit-requirements__header">Документы</div>
+                                                <ul class="credit-requirements__list">
+                                                    <li>Заявление</li>
+                                                    <li>Паспорт</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="credit-requirements__link">
+                                        <a href="#" target="_blank">Подробнее о кредите</a>
+                                    </div>
+                                </div>
+                                <div class="credits-list-item__cell credits-list-item__btn">
+                                    <div class="credits-list-item__license">Лиц. № 1978</div>
+                                    <div class="credits-list-item__requirements-btn"> Требования</div>
+                                    <span class="btn btn-success button_list">Подать заявку</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Список кредитов end-->
+
+                <!--Пагинация-->
+                <div class="pagination-container pagination-container--btn">
+                    <a href="#" class="btn btn-primary">Все потребительские кредиты</a>
+                </div>
+                <!--Пагинация end-->
+            </div>
+        </div>
+        <!-- Листинг кредитов end-->
+
+        <!--Отзывы на странице-->
+        <div class="content_i">
+            <div class="reviews-in-page">
+                <div class="reviews-in-page__head">
+                    <div class="reviews-in-page__title"><h2>Отзывы о Тинькофф банке</h2></div>
+                    <div class="reviews-in-page__head-btn"><span
+                            class="button_default encoded-link">Оставить отзыв</span></div>
+                </div>
+                <div class="reviews-in-page__body">
+                    <div class="reviews-in-page__cell">
+                        <div class="review-block">
+                            <div class="review-block__head">
+                                <div class="review-block__head-left">
+                                    <div class="review-author">
+                                        <div class="review-author__avatar"><img src="temp/user.svg"
+                                                                                alt="user"></div>
+                                        <div class="review-author__right">
+                                            <div class="review-author__name">Виктория,</div>
+                                            <div class="review-author__city">Благовещенск</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-block__head-center">
+                                    <div class="star-rating star-rating--1">
+                                        <div class="star-rating__text">1</div>
+                                        <div class="star-rating__stars">
+                                            <div class="star-rating__star"></div>
+                                            <div class="star-rating__star"></div>
+                                            <div class="star-rating__star"></div>
+                                            <div class="star-rating__star"></div>
+                                            <div class="star-rating__star"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-block__body">
+                                <div class="review-block__title"> В прямом смысле украли деньги</div>
+                                <div class="review-block__text"><p>Банкомат купюру номиналом в 2000 рублей принял как
+                                    200
+                                    рублей. В банке сказали, что сбоя в банкомате нет, вы ошиблись, но я же не дурочка.
+                                    Воруют как могут. </p></div>
+                            </div>
+                            <div class="review-block__footer">
+                                <div class="review-info">
+                                    <div class="review-info__left">
+                                        <div class="review-info__product"><span>Дебетовые карты</span></div>
+                                    </div>
+                                    <div class="review-info__center">
+                                        <div class="review-info__date"> 10.10.2019</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-in-page__cell">
+                        <div class="review-block">
+                            <div class="review-block__head">
+                                <div class="review-block__head-left">
+                                    <div class="review-author">
+                                        <div class="review-author__avatar"><img src="temp/user.svg"
+                                                                                alt="user"></div>
+                                        <div class="review-author__right">
+                                            <div class="review-author__name">Виктория,</div>
+                                            <div class="review-author__city">Благовещенск</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-block__head-center">
+                                    <div class="star-rating star-rating--1">
+                                        <div class="star-rating__text">1</div>
+                                        <div class="star-rating__stars">
+                                            <div class="star-rating__star"></div>
+                                            <div class="star-rating__star"></div>
+                                            <div class="star-rating__star"></div>
+                                            <div class="star-rating__star"></div>
+                                            <div class="star-rating__star"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-block__body">
+                                <div class="review-block__title"> В прямом смысле украли деньги</div>
+                                <div class="review-block__text"><p>Банкомат купюру номиналом в 2000 рублей принял как
+                                    200
+                                    рублей. В банке сказали, что сбоя в банкомате нет, вы ошиблись, но я же не дурочка.
+                                    Воруют как могут. </p></div>
+                            </div>
+                            <div class="review-block__footer">
+                                <div class="review-info">
+                                    <div class="review-info__left">
+                                        <div class="review-info__product"><span>Дебетовые карты</span></div>
+                                    </div>
+                                    <div class="review-info__center">
+                                        <div class="review-info__date"> 10.10.2019</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-in-page__footer">
+                    <a href="#" class="btn btn-primary">Все отзывы банка</a>
+                </div>
+            </div>
+        </div>
+        <!--Отзывы на странице end-->
+
+        <!-- Seo -->
+        <div class="content_i seo-text">
+            <h2>Взять кредит на автомобиль</h2>
+            <p>Автокредиты – специальный вид банковских услуг, позволяющий получить деньги на покупку легкового,
+                грузового или коммерческого транспорта. В зависимости от программы можно выбрать предложение на
+                новый или на подержанный автомобиль.
+            </p>
+            <h3>Какие автокредиты выдают банки?</h3>
+            <p>В 2019 году <a href="https://ru.myfin.by/banki">банки России</a> сделали специальные предложения
+                физическим лицам. Появилась возможность выбрать наиболее подходящий вид:
+            </p>
+            <ol>
+                <li>Классический. Позволяет купить авто в кредит на стандартных условиях. Предполагает пониженные
+                    процентные ставки, небольшой первый взнос. Однако обязательным является КАСКО и наличие полного
+                    пакета документов.
+                </li>
+                <li>Экспресс. Отличается быстротой рассмотрения заявки, возможность получить деньги без справки о
+                    доходах и с плохой кредитной историей. Предполагает более высокие ставки, наличие обеспечения.
+                </li>
+                <li>Trade-in. Подобные программы предполагают, что в качестве обеспечения выступает старых
+                    автомобиль. Проводится диагностика авто, проверка по базам ГИБДД.
+                </li>
+            </ol>
+            <h3>Условия получения автокредитов</h3>
+            <p>Купить автомобиль в кредит можно с выплатами на разный срок. Они зависят от общей суммы. Иногда банк
+                требует погасить задолженность до наступления определенного возраста, например, пенсионного.
+            </p>
+            <p>Поскольку банки при выдаче денег преследуют только одну цель – получение прибыли, процентные ставки
+                зависят от многих обстоятельств. На них влияет надежность кредитополучателя, сроки выплат и
+                возможность досрочного погашения.
+            </p>
+            <h3>Где взять выгодный автокредит?</h3>
+            <p>Кредит на автомобиль можно найти на нашем сайте. Представлены все предложения от банков с
+                возможностью самостоятельного подсчета калькулятором-онлайн. В сводной таблице указаны ставки,
+                примерные платежи в месяц и общая сумма переплаты.
+            </p>
+            <p>Самый простой способ взять машину в кредит – оставить онлайн-заявку сразу в несколько банков. При
+                положительном решении специалист банка перезвонит, уточнит условия с учетом предоставленных данных.
+                Кредитополучателю останется только выбрать наиболее подходящий для себя тип.
+            </p>
+        </div>
+        <!-- Seo end-->
+    </div>
+</div>
+
+<!--Контейнер с блоками ссылок-->
+<div class="container-fluid white_bg bb-1 mt-30" data-footer-links>
+    <div class="container">
+        <div class="footer-links footer-links--ptb-30 ">
+            <div class="footer-links__wrapper footer-links--col-4" data-mob-slider>
+                <!--Блок ссылок-->
+                <div class="footer-links__item footer-links-list">
+                    <div class="footer-links-list__header">Банковские продукты</div>
+                    <ul class="footer-links-list__list">
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Все кредиты МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Потребительские кредиты МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты на жилье МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты на автомобиль МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты для бизнеса МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты для бизнеса МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты для бизнеса МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты для бизнеса МТБанка</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Блок ссылок-->
+                <div class="footer-links__item footer-links-list">
+                    <div class="footer-links-list__header">Банковские продукты</div>
+                    <ul class="footer-links-list__list">
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Все кредиты МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Потребительские кредиты МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты на жилье МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты на автомобиль МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты для бизнеса МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты для бизнеса МТБанка</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Блок ссылок-->
+                <div class="footer-links__item footer-links-list">
+                    <div class="footer-links-list__header">Банковские продукты</div>
+                    <ul class="footer-links-list__list">
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Все кредиты МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Потребительские кредиты МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты на жилье МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты на жилье МТБанка</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!--Блок ссылок-->
+                <div class="footer-links__item footer-links-list">
+                    <div class="footer-links-list__header">Банковские продукты</div>
+                    <ul class="footer-links-list__list">
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Все кредиты МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Потребительские кредиты МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты для бизнеса МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты для бизнеса МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты на жилье МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты на автомобиль МТБанка</a>
+                        </li>
+                        <li class="footer-links-list__list-item">
+                            <a href="" class="footer-links-list__link">Кредиты для бизнеса МТБанка</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Контейнер с блоками ссылок конец-->
+
+<!--Footer-->
+<footer>
+    <div class="container-fluid content_i footer">
+        <div class="container mob_no_padding">
+            <div class="row bb-1">
+                <div class="col-md-2 text-center"><a href="/" title="На главную ru.myfin.by">
+                    <div class="footer_logo "></div>
+                </a></div>
+                <div class="col-md-6">
+                    <ul class="footer_menu list-unstyled">
+                        <li><a href="/page/o-nas">О нас</a></li>
+                        <li><a href="/page/reklama">Реклама</a></li>
+                        <li><a href="/page/kontakty">Контакты</a></li>
+                        <li><a href="/terminy">Словарь банковских терминов</a></li>
+                        <li><a href="https://myfin.by/kredity/potrebitelskie" target="_blank">Myfin.by</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_second footer_second--with-rating">
+                <div class="footer_second__copyright"> © 2017 - 2019, ru.myfin.by. Копирование материалов допускается
+                    только при наличии активной ссылки.
+                </div>
+                <div class="footer_second__rating">
+                    <div class="footer-rating active-user" itemscope=""
+                         itemtype="http://data-vocabulary.org/Review-aggregate">
+                        <div class="footer-rating__wrapper">
+                            <div class="footer-rating__title" itemprop="itemreviewed">Наш рейтинг</div>
+                            <div class="footer-rating__stars-container footer-rating__stars-container--mr">
+                                <div class="footer-rating__star footer-rating__star--filled" data-rating="1"><span
+                                        class="footer-rating__star-title">Очень плохо</span></div>
+                                <div class="footer-rating__star footer-rating__star--filled" data-rating="2"><span
+                                        class="footer-rating__star-title">Плохо</span></div>
+                                <div class="footer-rating__star footer-rating__star--filled" data-rating="3"><span
+                                        class="footer-rating__star-title">Нормально</span></div>
+                                <div class="footer-rating__star footer-rating__star--filled" data-rating="4"><span
+                                        class="footer-rating__star-title">Хорошо</span></div>
+                                <div class="footer-rating__star footer-rating__star--filled" data-rating="5"><span
+                                        class="footer-rating__star-title">Отлично</span></div>
+                            </div>
+                            <div class="footer-rating__text"><span data-avg="" itemprop="rating">4.8</span> из 5 (<span
+                                    itemprop="votes" data-total="">392</span> голоса)
+                            </div>
+                            <div class="footer-rating__send">
+                                <button>отправить</button>
+                            </div>
+                            <div class="footer-rating__gratitude">Спасибо за оценку! <i class="ic-like"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Footer end-->
+
+
+<!-- **************************************************************************************** -->
+<!-- FrontendAsset -->
+<script src="./FrontendAsset/jquery-2.2.0.js"></script>
+<!--SlickAsset-->
+<script src="./SlickAsset/slick.min.js"></script>
+<!--SlickAsset end-->
+<!--Selectric Asset-->
+<script src="./SelectricAsset/jquery.selectric.min.js"></script>
+<!--Selectric Asset end-->
+<script src="./FrontendAsset/app.js"></script>
+<script src="./FrontendAsset/bootstrap.min.js"></script>
+<script src="./FrontendAsset/bootstrap-datepicker.js"></script>
+<script src="./FrontendAsset/bootstrap-datepicker.ru.min.js"></script>
+<script src="./FrontendAsset/bootstrap-slider.js"></script>
+<script src="./FrontendAsset/classie.js"></script>
+<script src="./FrontendAsset/uisearch.js"></script>
+<script src="./FrontendAsset/selectFx.js"></script>
+<script src="./FrontendAsset/footer-rating.js"></script>
+<script src="./FrontendAsset/footer-links-list.js"></script>
+<script src="./FrontendAsset/swich-height.js"></script>
+<script src="./FrontendAsset/main_modals.js"></script>
+<!-- FrontendAsset end-->
+
+
+
+<!-- Used Components -->
+<script src="./UsedComponents/dropdown-banks-search/dropdown-banks-search.js"></script>
+<!-- Used Components end-->
+
+<!-- New -->
+<script src="new/js/credit-dropdown-info.js"></script>
+<!-- New end-->
+</body>
+
+</html>
